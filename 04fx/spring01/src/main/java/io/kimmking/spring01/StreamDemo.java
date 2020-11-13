@@ -3,6 +3,7 @@ package io.kimmking.spring01;
 import com.alibaba.fastjson.JSON;
 
 import java.io.IOException;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class StreamDemo {
@@ -23,7 +24,7 @@ public class StreamDemo {
         System.out.println("sum="+sum);
         
         //Map map = list.stream().collect(Collectors.toMap(a->a,a->(a+1)));
-        Map<Integer,Integer> map = list.parallelStream().collect(Collectors.toMap(a->a,a->(a+1),(a,b)->a, HashMap::new));
+        Map<Integer,Integer> map = list.parallelStream().collect(Collectors.toMap(a->a, a->(a+1),(a, b)->a, HashMap::new));
         print(map);
         
         
