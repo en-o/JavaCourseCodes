@@ -13,7 +13,6 @@ import java.io.Serializable;
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
-
 public class Student implements Serializable {
     
     private int id;
