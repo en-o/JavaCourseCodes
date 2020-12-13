@@ -28,4 +28,4 @@ classes/
 target/
 build/
 
-/04fx/spring01/target/
+.DS_Store
